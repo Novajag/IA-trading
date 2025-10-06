@@ -1,0 +1,59 @@
+﻿@page
+@model dynamic
+@{
+    Layout = null;
+    ViewData["Title"] = "Análise de Ações";
+}
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Ações</title>
+    <link rel="stylesheet" href="~/css/market.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Previsão do Mercado</h1>
+        <p>Acompanhe abaixo as análises das ações:</p>
+
+        <div id="stocks" class="stock-grid"></div>
+    </div>
+
+    <script>
+        const predictions = [
+            { name: "Apple", up: 72, down: 28, url: "https://broker.com/apple" },
+            { name: "Tesla", up: 36, down: 64, url: "https://broker.com/tesla" },
+            { name: "Google", up: 59, down: 41, url: "https://broker.com/google" },
+            { name: "Microsoft", up: 81, down: 19, url: "https://broker.com/microsoft" },
+        ];
+
+        function renderPredictions() {
+            const container = document.getElementById("stocks");
+            container.innerHTML = "";
+
+            predictions.forEach(stock => {
+                const isUp = stock.up > stock.down;
+                const maxProb = isUp ? stock.up : stock.down;
+                const recommendation = isUp ? "É boa para comprar" : "É ruim para comprar";
+                const colorClass = isUp ? "up" : "down";
+                const arrow = isUp ? "▲" : "▼";
+
+                const card = document.createElement("div");
+                card.className = "stock-card";
+
+                card.innerHTML = `
+                    <div class="arrow ${colorClass}">${arrow} ${maxProb}%</div>
+                    <h2>${stock.name}</h2>
+                    <div class="message">${recommendation}</div>
+                    <a class="btn" href="${stock.url}" target="_blank">Investir</a>
+                `;
+
+                container.appendChild(card);
+            });
+        }
+
+        renderPredictions();
+    </script>
+</body>
+</html>

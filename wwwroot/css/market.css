@@ -1,0 +1,128 @@
+﻿body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f7fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #222;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.stock-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.stock-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    .stock-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .stock-card h2 {
+        margin: 0 0 10px;
+        color: #333;
+        font-size: 1.5rem;
+    }
+
+.percentage {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.up {
+    color: #28a745; /* verde */
+}
+
+.down {
+    color: #dc3545; /* rojo */
+}
+
+.message {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+    .btn:hover {
+        background: linear-gradient(135deg, #0056b3, #003f88);
+    }
+
+/* Responsivo - móvil */
+@media (max-width: 600px) {
+    .stock-grid {
+        display: block;
+    }
+
+    .stock-card {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 5px;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .arrow {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 1.5rem;
+    }
+
+    .stock-card h2 {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    .message {
+        grid-column: 1 / 3;
+        grid-row: 2;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .btn {
+        grid-column: 1 / 3;
+        grid-row: 3;
+        margin-top: 10px;
+        width: 100%;
+    }
+}
