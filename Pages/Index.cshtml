@@ -1,5 +1,5 @@
 ﻿@page
-@model dynamic
+@model ML_2025.Pages.IndexModel
 @{
     Layout = null;
     ViewData["Title"] = "Análise de Ações";
@@ -10,50 +10,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Análise de Ações</title>
-    <link rel="stylesheet" href="~/css/market.css">
+
+    <!-- Bootstrap CSS (si quieres usar las clases que ya pusiste) -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Tus estilos -->
+    <link rel="stylesheet" href="~/css/market2.css" />
 </head>
 <body>
-    <div class="container">
+    <div class="container responsive-div text-center mt-4">
         <h1>📊 Previsão do Mercado</h1>
-        <p>Acompanhe abaixo as análises das ações:</p>
+        <div class="card shadow-sm mt-4">
+            <div class="card-header text-center bg-primary text-white">
+                <p class="mb-0 fw-semibold">Acompanhe abaixo as análises das ações:</p>
+            </div>
+            <div class="card-body d-flex flex-column align-items-center">
+                @if (Model.PredictionResult != null)
+                {
+                    <div id="stocks" class="w-100 px-4 row">
+                        <div class="col-12 d-flex flex-column flex-md-row justify-content-between align-items-center bg-gradient rounded-3 p-4 mb-3 text-white shadow">
 
-        <div id="stocks" class="stock-grid"></div>
+                            <!-- Icono -->
+                            <div class="mb-2 mb-md-0">
+                                <i class="bi bi-graph-up colortext fs-2"></i>
+                            </div>
+
+                            <!-- Texto predicción -->
+                            <div class="text-center mb-2 mb-md-0">
+                                @if (Model.PredictionResult.PredictedLabel == true)
+                                {
+                                    <h6 class="fw-bold mb-1 colortext">É bom para investir.</h6>
+                                }
+                                else
+                                {
+                                    <h6 class="fw-bold mb-1 colortext">Não é uma boa ideia investir agora.</h6>
+                                }
+
+                               
+                                @{
+                                    var probabilidadPorcentaje = Model.PredictionResult != null
+                                    ? (Model.PredictionResult.Probability * 100).ToString("F2") + "%"
+                                    : "0%";
+                                }
+                                <h6 class="mb-0 colortext">@probabilidadPorcentaje</h6>
+                            </div>
+
+                       
+                            <div>
+                                <button id="salvarBtn" class="btn btn-success rounded-circle d-flex align-items-center justify-content-center" style="width:50px; height:50px;">
+                                    <i class="bi bi-hand-thumbs-up-fill fs-5"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div id="stocks" class="w-100 px-4 row">
+                        <div class="col-12 d-flex justify-content-center align-items-center bg-secondary text-white rounded-3 p-4 shadow">
+                            <h6 class="mb-0">Esperando por dados</h6>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+
+        <form class="row mt-3" method="post">
+            <div class="col col-12 col-md-6">
+                <
+                <label class="form-label">Valor semana pasada</label>
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-sm-1"><i class="bi bi-bar-chart"></i></span>
+                    <input asp-for="InputText1"
+                           type="number"
+                           class="form-control"
+                           aria-label="Valor semana pasada"
+                           aria-describedby="inputGroup-sizing-sm-1" />
+                </div>
+            </div>
+
+            <div class="col col-12 col-md-6">
+
+                <label class="form-label">Valor semana actual</label>
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-sm-2"><i class="bi bi-bar-chart"></i></span>
+                    <input asp-for="InputText2"
+                           type="number"
+                           class="form-control"
+                           aria-label="Valor semana actual"
+                           aria-describedby="inputGroup-sizing-sm-2" />
+                </div>
+            </div>
+
+            <div class="col-12 d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary">
+                    analisar
+                </button>
+            </div>
+        </form>
+
     </div>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+
     <script>
-        const predictions = [
-            { name: "Apple", up: 72, down: 28, url: "https://broker.com/apple" },
-            { name: "Tesla", up: 36, down: 64, url: "https://broker.com/tesla" },
-            { name: "Google", up: 59, down: 41, url: "https://broker.com/google" },
-            { name: "Microsoft", up: 81, down: 19, url: "https://broker.com/microsoft" },
-        ];
+        document.getElementById("salvarBtn").addEventListener("click", async () => {
+            const valor1 = document.querySelector('input[name="InputText1"]').value;
+            const valor2 = document.querySelector('input[name="InputText2"]').value;
 
-        function renderPredictions() {
-            const container = document.getElementById("stocks");
-            container.innerHTML = "";
+            const formData = new FormData();
+            formData.append("valor1", valor1);
+            formData.append("valor2", valor2);
 
-            predictions.forEach(stock => {
-                const isUp = stock.up > stock.down;
-                const maxProb = isUp ? stock.up : stock.down;
-                const recommendation = isUp ? "É boa para comprar" : "É ruim para comprar";
-                const colorClass = isUp ? "up" : "down";
-                const arrow = isUp ? "▲" : "▼";
+   
+            const prediccion = document.querySelector('#stocks h6')?.innerText || '';
+            const probabilidad = document.querySelector('#stocks h6:nth-child(2)')?.innerText || 0;
+            formData.append("Prediccion", prediccion);
+            formData.append("Probabilidad", probabilidad);
 
-                const card = document.createElement("div");
-                card.className = "stock-card";
-
-                card.innerHTML = `
-                    <div class="arrow ${colorClass}">${arrow} ${maxProb}%</div>
-                    <h2>${stock.name}</h2>
-                    <div class="message">${recommendation}</div>
-                    <a class="btn" href="${stock.url}" target="_blank">Investir</a>
-                `;
-
-                container.appendChild(card);
+    
+            const response = await fetch('/Index?handler=Salvar', {
+                method: "POST",
+                body: formData
             });
-        }
 
-        renderPredictions();
+            if (response.ok) {
+                const data = await response.json();
+                alert(data.mensaje ?? "Datos salvo no secundario.csv");
+            } else {
+                alert("Error ao salvar os datos");
+            }
+        });
     </script>
+
+
+    <style>
+       
+    </style>
 </body>
 </html>

@@ -1,0 +1,13 @@
+Fecha,Texto,Prediccion,Probabilidade
+"2025-11-25 12:03:01","valor de la semana pasada 78 , valor esta semana 9",True,56,55%
+"2025-11-25 12:49:27","valor de la semana pasada 40 , valor esta semana 50",False,50,67%
+"2025-11-25 13:36:26","valor de la semana pasada 122 , valor esta semana 32",False,52,07%
+"2025-11-25 13:56:51","valor de la semana pasada 1 , valor esta semana 432",False,49,59%
+"2025-11-25 19:37:27","valor de la semana pasada 122 , valor esta semana 123",False,58,54%
+"2025-11-25 19:39:22","valor de la semana pasada 123 , valor esta semana 1",False,68,74%
+"2025-12-03 13:58:33","valor de la semana pasada 11 , valor esta semana 14",False,38,60%
+"2025-12-03 14:12:25","valor de la semana pasada 123 , valor esta semana 300.",False,70,30%
+"2025-12-03 16:50:58","valor de la semana pasada 123 , valor esta semana 300",False,70,30%
+"2025-12-03 16:53:48","valor de la semana pasada 78 , valor esta semana 999",False,56,53%
+"2025-12-03 19:32:58","valor de la semana pasada 123 , valor esta semana 30",False,71,02%
+"2025-12-03 19:34:23","valor de la semana pasada 300 , valor esta semana 40",False,49,12%

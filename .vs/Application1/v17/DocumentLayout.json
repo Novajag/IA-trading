@@ -1,0 +1,220 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|c:\\users\\nova\\onedrive\\desktop\\pro-ia\\ia-trading\\services\\modelbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|solutionrelative:services\\modelbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|c:\\users\\nova\\onedrive\\desktop\\pro-ia\\ia-trading\\mlmodels\\feedbacklog.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|solutionrelative:mlmodels\\feedbacklog.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|c:\\users\\nova\\onedrive\\desktop\\pro-ia\\ia-trading\\mlmodels\\userlog.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|solutionrelative:mlmodels\\userlog.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|c:\\users\\nova\\onedrive\\desktop\\pro-ia\\ia-trading\\services\\userssave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|solutionrelative:services\\userssave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|c:\\users\\nova\\onedrive\\desktop\\pro-ia\\ia-trading\\services\\feedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|solutionrelative:services\\feedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|c:\\users\\nova\\onedrive\\desktop\\pro-ia\\ia-trading\\mlmodels\\sentiment.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|solutionrelative:mlmodels\\sentiment.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|c:\\users\\nova\\onedrive\\desktop\\pro-ia\\ia-trading\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|c:\\users\\nova\\onedrive\\desktop\\pro-ia\\ia-trading\\models\\sentimentdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|solutionrelative:models\\sentimentdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|c:\\users\\nova\\onedrive\\desktop\\pro-ia\\ia-trading\\models\\sentimentprediction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|solutionrelative:models\\sentimentprediction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|c:\\users\\nova\\onedrive\\desktop\\pro-ia\\ia-trading\\models\\predictrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|solutionrelative:models\\predictrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|c:\\users\\nova\\onedrive\\desktop\\pro-ia\\ia-trading\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|solutionrelative:pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|c:\\users\\nova\\onedrive\\desktop\\pro-ia\\ia-trading\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D6A6901-9673-2553-E2C2-8C86DC5B0362}|Application1.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ModelBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\Services\\ModelBuilder.cs",
+              "RelativeDocumentMoniker": "Services\\ModelBuilder.cs",
+              "ToolTip": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\Services\\ModelBuilder.cs",
+              "RelativeToolTip": "Services\\ModelBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T22:35:45.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserLog.csv",
+              "DocumentMoniker": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\MLModels\\UserLog.csv",
+              "RelativeDocumentMoniker": "MLModels\\UserLog.csv",
+              "ToolTip": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\MLModels\\UserLog.csv",
+              "RelativeToolTip": "MLModels\\UserLog.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-11-25T15:04:10.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FeedbackService.cs",
+              "DocumentMoniker": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\Services\\FeedbackService.cs",
+              "RelativeDocumentMoniker": "Services\\FeedbackService.cs",
+              "ToolTip": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\Services\\FeedbackService.cs",
+              "RelativeToolTip": "Services\\FeedbackService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T20:52:29.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SentimentData.cs",
+              "DocumentMoniker": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\Models\\SentimentData.cs",
+              "RelativeDocumentMoniker": "Models\\SentimentData.cs",
+              "ToolTip": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\Models\\SentimentData.cs",
+              "RelativeToolTip": "Models\\SentimentData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T21:56:27.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "sentiment.csv",
+              "DocumentMoniker": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\MLModels\\sentiment.csv",
+              "RelativeDocumentMoniker": "MLModels\\sentiment.csv",
+              "ToolTip": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\MLModels\\sentiment.csv",
+              "RelativeToolTip": "MLModels\\sentiment.csv",
+              "ViewState": "AgIAAJcHAAAAAAAAAAAAALYLAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-11-24T22:41:06.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FeedbackLog.csv",
+              "DocumentMoniker": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\MLModels\\FeedbackLog.csv",
+              "RelativeDocumentMoniker": "MLModels\\FeedbackLog.csv",
+              "ToolTip": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\MLModels\\FeedbackLog.csv",
+              "RelativeToolTip": "MLModels\\FeedbackLog.csv",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-11-25T15:04:40.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersSave.cs",
+              "DocumentMoniker": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\Services\\UsersSave.cs",
+              "RelativeDocumentMoniker": "Services\\UsersSave.cs",
+              "ToolTip": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\Services\\UsersSave.cs",
+              "RelativeToolTip": "Services\\UsersSave.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T22:44:30.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAEUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T17:18:28.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PredictRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\Models\\PredictRequest.cs",
+              "RelativeDocumentMoniker": "Models\\PredictRequest.cs",
+              "ToolTip": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\Models\\PredictRequest.cs",
+              "RelativeToolTip": "Models\\PredictRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T21:56:29.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SentimentPrediction.cs",
+              "DocumentMoniker": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\Models\\SentimentPrediction.cs",
+              "RelativeDocumentMoniker": "Models\\SentimentPrediction.cs",
+              "ToolTip": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\Models\\SentimentPrediction.cs",
+              "RelativeToolTip": "Models\\SentimentPrediction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T22:20:15.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Error.cshtml",
+              "ToolTip": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\Pages\\Error.cshtml",
+              "RelativeToolTip": "Pages\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-19T21:27:42.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-19T21:27:48.601Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1087,11 +1087,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nova\\source\\repos\\Application1\\Application1\\Application1.csproj",
+      "projectUniqueName": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\Application1.csproj",
       "projectName": "Application1",
-      "projectPath": "C:\\Users\\Nova\\source\\repos\\Application1\\Application1\\Application1.csproj",
+      "projectPath": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\Application1.csproj",
       "packagesPath": "C:\\Users\\Nova\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nova\\source\\repos\\Application1\\Application1\\obj\\",
+      "outputPath": "C:\\Users\\Nova\\OneDrive\\Desktop\\pro-ia\\IA-trading\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

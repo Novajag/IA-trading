@@ -8,6 +8,8 @@ builder.Services.AddRazorPages();
 
 var pastaModelos = Path.Combine(AppContext.BaseDirectory, "MLModels");
 
+builder.Services.AddSingleton<FeedbackService>();
+
 if (!File.Exists(Path.Combine(pastaModelos, "model.zip")))
     ModelBuilder.Treinar(pastaModelos);
 
